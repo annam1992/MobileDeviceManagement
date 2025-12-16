@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadContent</key>
+            <dict>
+                <key>CertificateRenewalTimeInterval</key>
+                <integer>365</integer>
+                <key>Challenge</key>
+                <string>E6D564A4FF6F1170CEDBB26A0993B6DE</string>
+                <key>Key Type</key>
+                <string>RSA</string>
+                <key>KeyIsExtractable</key>
+                <false/>
+                <key>Keysize</key>
+                <integer>2048</integer>
+                <key>Name</key>
+                <string>citigo.id</string>
+                <key>Subject</key>
+                <array>
+                    <array>
+                        <array>
+                            <string>CN</string>
+                            <string>%devicename%$</string>
+                        </array>
+                    </array>
+                </array>
+                <key>SubjectAltName</key>
+                <dict>
+                    <key>uniformResourceIdentifier</key>
+                    <string>tag:microsoft.com,2022-09-14:sid:%asset_tag%</string>
+                    <key>ntPrincipalName</key>
+                    <string>%devicename%</string>
+                </dict>
+                <key>URL</key>
+                <string>http://192.168.202.247/CertSrv/mscep/mscep.dll</string>
+            </dict>
+            <key>PayloadDisplayName</key>
+            <string>SCEP for Ethernet</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.security.scep.C863F9E1-073B-48F3-9D35-49CF36FB5579</string>
+            <key>PayloadType</key>
+            <string>com.apple.security.scep</string>
+            <key>PayloadUUID</key>
+            <string>EBDE2723-8786-4E10-BD6E-5872C72920D8</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+        
+        <dict>
+            <key>EAPClientConfiguration</key>
+            <dict>
+                <key>AcceptEAPTypes</key>
+                <array>
+                    <integer>13</integer> </array>
+                
+                <key>PayloadCertificateUUID</key>
+                <string>EBDE2723-8786-4E10-BD6E-5872C72920D8</string>
+                
+                <key>PayloadCertificateAnchorUUID</key>
+                <array>
+                    <string>01B632CD-1F9B-443E-B261-6B9C438D2A22</string>
+                </array>
+
+                <key>TLSTrustedServerNames</key>
+                <array>
+                    <string>citigo-HQ-ADC-AD-CA</string>
+                </array>
+            </dict>
+            <key>Interface</key>
+            <string>AnyEthernet</string>
+            <key>PayloadDisplayName</key>
+            <string>802.1X Ethernet: Global #1</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.globalethernet.managed.6000664C-0C9A-4D24-A485-D3D6CFC8AA1A</string>
+            <key>PayloadType</key>
+            <string>com.apple.globalethernet.managed</string>
+            <key>PayloadUUID</key>
+            <string>6000664C-0C9A-4D24-A485-D3D6CFC8AA1A</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>SetupModes</key>
+            <array>
+                <string>System</string>
+            </array>
+        </dict>
+
+        <dict>
+            <key>PayloadContent</key>
+            <data>
+            MIIDhzCCAm+gAwIBAgIQLqrpx24M8JBCWxa7tblZpjANBgkqhkiG9w0BAQsFADBKMRIwEAYKCZImiZPyLGQBGRYCaWQxFjAUBgoJkiaJk/IsZAEZFgZjaXRpZ28xHDAaBgNVBAMTE2NpdGlnby1IUS1BREMtQUQtQ0EwHhcNMjMwODE0MDkwNDE2WhcNMjgwODE0MDkxNDE2WjBKMRIwEAYKCZImiZPyLGQBGRYCaWQxFjAUBgoJkiaJk/IsZAEZFgZjaXRpZ28xHDAaBgNVBAMTE2NpdGlnby1IUS1BREMtQUQtQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGBjNVRuhPSsdtaWxWUFNvi+nkVgvNs6qbnypkM64LAaYmGbDaeNGtzPSV29qBR5yVy5iQsOCIS2PdP3pEawxOlX/h5sxc8ZycG2hQG8mwCtFDHPDMMXCZFHKKrMIVbBnQtJdNfLgvNpnMJwlYZMXP8Ngn+DnaWqGryAj3Do/zWgCSZPqFaKfuex9jFjbKVa63VORVsUw++D3BpThBfZ8CTB1RT7VJ0Hlb5O5rd49WsvOx0WxZmOzUzWcyIcRowgC2DwvO69VNC2xXxpBJxibiT68UFWIBcdc9zz8vK2+MCT27780ZY9S3T2tsq2JthczX39OsQik3csYAYJgaTx/BAgMBAAGjaTBnMBMGCSsGAQQBgjcUAgQGHgQAQwBBMA4GA1UdDwEB/wQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBSJdbh7ih7re0jjIRxaxaFrZ71mUzAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAQEAj8OrN7mae+8KJZSFi5rLVALnTnrGE2joX0eF6RG+4N1pF0JiHUMGJAp1zc57hqg+M6AX8yE46QYvXvMS12PV8FbTQHw8YRunLCjMXLTz71zMrzRDdLttDW7KgucMh5xCnd2hwFK+MN5gnayE1GCJATXyq151UORffmtpCoZp2qcD36MQ4oXsa5k5u7pul1yKMSs5BWSPgVynCRAXfcUPaZpGP57HFiO3dkXhAJWGzqx+JDx7FLL0aeD/O+BvGIyLBvQNkrt/NtX0ZbQ6DHI0lNGoFzycBz7OJCMK5fV4jkfOhD8vKgjoJ+INg+xeKN2e+O2E4c96oBHR58szgBOG9g==
+            </data>
+            <key>PayloadDisplayName</key>
+            <string>Corporate Root CA</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.security.root.01B632CD-1F9B-443E-B261-6B9C438D2A22</string>
+            <key>PayloadType</key>
+            <string>com.apple.security.root</string>
+            <key>PayloadUUID</key>
+            <string>01B632CD-1F9B-443E-B261-6B9C438D2A22</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+    </array>
+    
+    <key>PayloadDescription</key>
+    <string>Enroll certificate for Company's Device with EAP-TLS</string>
+    <key>PayloadDisplayName</key>
+    <string>Ethernet-Configuration-SCEP-TLS</string>
+    <key>PayloadIdentifier</key>
+    <string>com.kiotviet.ethernet-SCEP-V3</string>
+    <key>PayloadOrganization</key>
+    <string>KIOTVIET</string>
+    <key>PayloadRemovalDisallowed</key>
+    <true/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>38867EBA-9170-4C0A-A52A-5B35C82C098F</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>TargetDeviceType</key>
+    <integer>5</integer>
+</dict>
+</plist>
